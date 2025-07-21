@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="pics/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/d1dc9e05e8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div id="header">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="pics/logo.png" class="logo" alt="Logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mywork">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#con">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="header-text text-md-start text-sm-end">
+                <h1>
+                  <strong> Hi, I'm </strong><span id="Home">Mansoor Ahmed</span
+                  ><br />
+                  <h5>Web Developer</h5>
+                </h1>
+
+                <p class="afterhead mt-3">
+                  − I create responsive websites using HTML, CSS, Bootstrap &
+                  PHP.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container about">
+        <div class="row abrow align-items-center">
+          <div class="col-lg-4 col-md-5 col-12 text-center mb-4 mb-md-0">
+            <img
+              src="pics/about.png"
+              alt="Profile"
+              class="img-fluid rounded about-img mt-5 mb-5"
+            />
+          </div>
+          <div class="col-lg-8 col-md-7 col-12">
+            <h1 class="sub-title" id="about">About me</h1>
+            <p>
+              I’m Mansoor Ahmed, a full-stack web developer with expertise in
+              both frontend and backend technologies. I specialize in building
+              modern, responsive, and dynamic web applications using HTML, CSS,
+              Bootstrap, PHP, and MySQL. I’m passionate about writing clean,
+              optimized code and creating user-friendly interfaces, and I
+              continuously work to enhance my skills and stay updated with
+              current web development trends.
+            </p>
+
+            <div class="tab-titles d-flex flex-wrap">
+              <p
+                class="tab-links active-link me-3 me-md-4"
+                onclick="opentab('skills')"
+              >
+                Skills
+              </p>
+              <p class="tab-links me-3 me-md-4" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents me-3 me-md-4 active-tab" id="skills">
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <span>PHP & MySQL</span><br />
+                  Dynamic websites with login/signup, cart, CRUD, image uploads
+                </li>
+                <li class="mb-3">
+                  <span>HTML5 & CSS3</span><br />
+                  Responsive layouts with semantic markup
+                </li>
+
+                <li class="mb-3">
+                  <span>JavaScript</span><br />
+                  Pre-built script integration (tabs, sliders)
+                </li>
+              </ul>
+
+              <!-- Hidden Extra Skills -->
+              <div class="extra-skills" id="extraSkills">
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <span>Bootstrap 4/5</span><br />
+                    Mobile-first UI with ready-made components
+                  </li>
+                  <li class="mb-3">
+                    <span>Figma to HTML</span><br />
+                    Convert UI mockups to functional front-end code
+                  </li>
+                  <li class="mb-3">
+                    <span>Touch Typing</span><br />Typing speed 60+ WPM with
+                    accuracy
+                  </li>
+                  <li class="mb-3">
+                    <span>MS Office</span><br />Word, Excel, PowerPoint for
+                    documentation
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Toggle Button -->
+              <button class="see-more-toggle" onclick="toggleExtraSkills()">
+                <span>See More</span>
+                <span class="arrow">▼</span>
+              </button>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <span>Learning & Practical Experience</span><br />
+                  I’ve been learning full-stack web development at Aptech since
+                  2024, focusing on real-world functionality using HTML, CSS,
+                  Bootstrap, PHP, and MySQL. I’ve created multiple fully
+                  functional web applications as part of my self-practice. The
+                  projects listed below reflect my practical skills and learning
+                  journey.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <span>Intermediate (ICS)</span><br />
+                  Ongoing — Sindh Board, Karachi<br />
+                  Expected Completion: 2027
+                </li>
+                <li class="mb-2">
+                  <span>Matriculation</span><br />
+                  Hamdard Public School — Sindh Board, Karachi (2025)
+                </li>
+                <li class="mb-2">
+                  <span>Web Development Course</span><br />
+                  Aptech Institute, Karachi<br />
+                  Covered HTML, CSS, Bootstrap, PHP, MySQL, and currently
+                  learning Laravel
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title text-center mb-5" id="service">My services</h1>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-card h-100 p-4 text-start">
+              <div class="icon text-center">
+                <i class="fa-solid fa-code mb-3"></i>
+                <h2>Frontend Web Design</h2>
+              </div>
+              <p>
+                Designing responsive and user-friendly interfaces using HTML,
+                CSS, and Bootstrap. Pixel-perfect conversion from Figma or Adobe
+                XD designs.
+              </p>
+              <ul class="list-unstyled text-start">
+                <li>Exact match with design</li>
+                <li>Responsive layout</li>
+                <li>Bootstrap component integration</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-card h-100 p-4 text-start">
+              <div class="icon"></div>
+              <div class="icon text-center">
+                <i class="fas fa-server mb-3"></i>
+                <h2>Backend Development</h2>
+              </div>
+              <p>
+                Building secure PHP-MySQL applications with login/signup,
+                session management, form handling, and admin panel CRUD
+                functionalities.
+              </p>
+              <ul class="list-unstyled text-start">
+                <li>Secure user authentication with sessions</li>
+                <li>Dynamic CRUD operations for admin panels</li>
+                <li>Form validation & database integration</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-card h-100 p-4 text-start">
+              <div class="icon text-center">
+                <i class="fas fa-tools fa-2x mb-3"></i>
+                <h2>Portfolio / Product Websites</h2>
+              </div>
+              <p>
+                Developing elegant personal portfolios, product showcases, and
+                business landing pages fully responsive and ready for
+                deployment.
+              </p>
+              <ul class="list-unstyled text-start">
+                <li>Clean & modern UI with HTML5/CSS3</li>
+                <li>Responsive layouts using Bootstrap</li>
+                <li>Optimized for performance & SEO</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title text-center mb-5" id="mywork">My Work</h1>
+        <div class="row g-4">
+          <!-- Lumina Online Store -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="work">
+              <img
+                src="pics/lumina-store.png"
+                alt="Lumina E-commerce"
+                class="img-fluid"
+              />
+              <div class="layer">
+                <h3>Lumina Online Store</h3>
+                <p>
+                  Dynamic PHP-MySQL e-commerce site with login/signup, cart,
+                  admin panel & product filtering.
+                </p>
+                <a
+                  href="http://MansoorAhmed.infy.uk/eproject/pages"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aura Watches Project -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="work">
+              <img
+                src="pics/aura-watches.png"
+                alt="Aura Watches"
+                class="img-fluid"
+              />
+              <div class="layer">
+                <h3>Aura Watches</h3>
+                <p>
+                  A modern static watch store built using HTML, CSS & Bootstrap.
+                  Clean layout, responsive design.
+                </p>
+                <a
+                  href="https://mansoor-110.github.io/Watches-Website/"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amazon Landing Page -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="work">
+              <img
+                src="pics/amazon-landing.png"
+                alt="Amazon Landing Page"
+                class="img-fluid"
+              />
+              <div class="layer">
+                <h3>Amazon Landing Page</h3>
+                <p>
+                  Single-page responsive layout inspired by Amazon. Built using
+                  HTML, CSS & Bootstrap.
+                </p>
+                <a
+                  href="https://mansoor-110.github.io/amazon_landing_page/"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hidden extra projects -->
+<div id="more-projects" style="display: none;">
+  <div class="row mt-5">
+    <!-- Project 4 -->
+    <div class="col-lg-4 col-md-6 col-12">
+      <div class="work">
+        <img src="pics/bag-website.png" alt="Sample Project 4" class="img-fluid" />
+        <div class="layer">
+          <h3>Bag Bag Website</h3>
+          <p>
+           A modern, responsive landing page for a stylish bag store.
+Built using HTML and CSS with a clean layout and product highlights.
+          </p>
+          <a href="https://mansoor-110.github.io/bag-website/" target="_blank">
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Add more cards as needed -->
+  </div>
+</div>
+
+
+<div class="text-center mb-5">
+  <a href="#" class="btn btn-custom mt-5" id="seeMoreBtn">See More</a>
+</div>
+
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5 col-md-6 col-12">
+            <div class="contact-left">
+              <h1 class="sub-title" id="con">Contact Me</h1>
+              <p>
+                <i class="fa-solid fa-paper-plane"></i
+                ><a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=m.mansoorahmed1000@gmail.com"
+                  class="text-white text-decoration-none"
+                  target="blank"
+                  >m.mansoorahmed1000@gmail.com</a
+                >
+              </p>
+              <p><i class="fa-solid fa-phone"></i>+923122349613</p>
+
+              <div class="social-icons mb-5">
+                <!-- <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a> -->
+              </div>
+
+              <a href="CV.pdf" download class="btn btn-custom btn2 d-inline-block"
+                >Download CV</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6 col-12">
+            <div class="contact-right">
+              <form>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      name="message"
+                      class="form-control"
+                      rows="6"
+                      placeholder="Your Message"
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-custom btn2">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="mb-0">
+                Copyright &copy; Mansoor. Made with
+                <i class="fa-solid fa-heart"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      // see more btn
+      function toggleExtraSkills() {
+        const extra = document.getElementById("extraSkills");
+        const button = document.querySelector(".see-more-toggle");
+
+        extra.classList.toggle("open");
+        button.classList.toggle("open");
+
+        button.querySelector("span").textContent = extra.classList.contains(
+          "open"
+        )
+          ? "See Less"
+          : "See More";
+      }
+    
+  document.getElementById("seeMoreBtn").addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent link jump
+    var moreProjects = document.getElementById("more-projects");
+    if (moreProjects.style.display === "none") {
+      moreProjects.style.display = "block";
+      this.textContent = "See Less";
+    } else {
+      moreProjects.style.display = "none";
+      this.textContent = "See More";
+    }
+  });
+
+    </script>
+  </body>
+</html>
